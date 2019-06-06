@@ -4,10 +4,10 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 
 @Aspect
-@Component
+@Configuration
 public class TrackTimeAspect {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
