@@ -1,6 +1,5 @@
 package com.gmarano.spring.examples.aspects;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -11,9 +10,4 @@ public class MyApplication {
         SpringApplication.run(MyApplication.class, args);
     }
 
-    @Autowired
-    private void prova(Prova prova) throws InterruptedException {
-
-        prova.run();
-    }
 }
