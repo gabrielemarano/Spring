@@ -12,8 +12,8 @@ public class MyApplication {
     }
 
     @Autowired
-    private void prova(Prova prova){
+    private void prova(Prova prova) throws InterruptedException {
 
-        prova.pippo();
+        prova.run();
     }
 }

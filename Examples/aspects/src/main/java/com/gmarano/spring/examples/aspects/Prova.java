@@ -1,14 +1,15 @@
 package com.gmarano.spring.examples.aspects;
 
+import com.gmarano.spring.examples.aspects.annotations.TrackTime;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Prova {
 
-    public void pippo() {
+    @TrackTime
+    public void run() throws InterruptedException {
 
-        int a = 0;
-
+        Thread.sleep(3000);
     }
 
 }
